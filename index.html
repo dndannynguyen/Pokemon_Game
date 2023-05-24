@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html leng="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="index.js" defer></script>
+        <link rel="stylesheet" href="index.css">
+        <title>Pokemon Matching</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1><b>Mathch All The Pokemon</b></h1>
+            <div class="buttons">
+                <button id="easy" class="difficulty active"><b>Easy</b></button>
+                <button id="medium" class="difficulty"><b> Medium</b></button>
+                <button id="hard" class="difficulty"><b> Hard</b></button>
+            </div>
+            <br>
+            <div class="themes">
+                <button id="lightTheme" class="active"><b> Light Mode</b></button>
+                <button id="darkTheme"><b> Dark Mode </b></button>
+            </div>
+
+            <h3>Number of clicks: <span id="playerClicks">0</span></h3>
+            <h3>Pairs left: <span id="pairsToMatch">0</span></h3>
+            <h3>Matched pairs: <span id="matchedPairs">0</span></h3>
+            <h3>Total pairs: <span id="totalPairs">0</span></h3>
+            <h3 id="timeInformation">You have <span id="totalTime"></span> seconds. <span id="timeRemaining"></span> seconds remaining.</h3>
+            
+            <div class="buttons">
+                <button id="reset">Reset</button>
+                <button id="start">Start</button>
+            </div>
+            
+        </div>
+    </body>
+</html>
